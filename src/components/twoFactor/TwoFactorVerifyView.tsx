@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, type FormEvent } from 'react'
-import { useRouter } from 'next/navigation.js'
+import { useRouter } from '@payloadcms/ui'
 import { useConfig } from '@payloadcms/ui'
 import { useAuthMountPath } from '../useAuthMountPath.js'
 
@@ -79,13 +79,13 @@ export function TwoFactorVerifyView({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        background: 'var(--theme-bg)',
+        background: 'var(--color-bg)',
         padding: 'var(--base)',
       }}
     >
       <div
         style={{
-          background: 'var(--theme-elevation-50)',
+          background: 'var(--color-bg-elevated)',
           padding: 'calc(var(--base) * 2)',
           borderRadius: 'var(--style-radius-m)',
           boxShadow: '0 2px 20px rgba(0, 0, 0, 0.1)',
@@ -106,7 +106,7 @@ export function TwoFactorVerifyView({
 
         <h1
           style={{
-            color: 'var(--theme-text)',
+            color: 'var(--color-text)',
             fontSize: 'var(--font-size-h3)',
             fontWeight: 600,
             margin: '0 0 calc(var(--base) * 0.5) 0',
@@ -118,7 +118,7 @@ export function TwoFactorVerifyView({
 
         <p
           style={{
-            color: 'var(--theme-text)',
+            color: 'var(--color-text)',
             opacity: 0.7,
             fontSize: 'var(--font-size-small)',
             textAlign: 'center',
@@ -136,7 +136,7 @@ export function TwoFactorVerifyView({
               htmlFor="code"
               style={{
                 display: 'block',
-                color: 'var(--theme-text)',
+                color: 'var(--color-text)',
                 marginBottom: 'calc(var(--base) * 0.5)',
                 fontSize: 'var(--font-size-small)',
                 fontWeight: 500,
@@ -163,10 +163,10 @@ export function TwoFactorVerifyView({
               style={{
                 width: '100%',
                 padding: 'calc(var(--base) * 0.75)',
-                background: 'var(--theme-input-bg)',
-                border: '1px solid var(--theme-elevation-150)',
+                background: 'var(--color-bg)',
+                border: '1px solid var(--color-border)',
                 borderRadius: 'var(--style-radius-s)',
-                color: 'var(--theme-text)',
+                color: 'var(--color-text)',
                 fontSize: 'var(--font-size-h4)',
                 fontFamily: 'monospace',
                 textAlign: 'center',
@@ -180,13 +180,13 @@ export function TwoFactorVerifyView({
           {error && (
             <div
               style={{
-                color: 'var(--theme-error-500)',
+                color: 'var(--color-text-danger)',
                 marginBottom: 'var(--base)',
                 fontSize: 'var(--font-size-small)',
                 padding: 'calc(var(--base) * 0.5)',
-                background: 'var(--theme-error-50)',
+                background: 'var(--color-bg-danger-tertiary)',
                 borderRadius: 'var(--style-radius-s)',
-                border: '1px solid var(--theme-error-200)',
+                border: '1px solid var(--color-border-danger)',
               }}
             >
               {error}
@@ -199,10 +199,10 @@ export function TwoFactorVerifyView({
             style={{
               width: '100%',
               padding: 'calc(var(--base) * 0.75)',
-              background: 'var(--theme-elevation-800)',
+              background: 'var(--color-text)',
               border: 'none',
               borderRadius: 'var(--style-radius-s)',
-              color: 'var(--theme-elevation-50)',
+              color: 'var(--color-bg-elevated)',
               fontSize: 'var(--font-size-base)',
               fontWeight: 500,
               cursor: loading || (!useBackupCode && code.length !== 6) ? 'not-allowed' : 'pointer',
@@ -225,7 +225,7 @@ export function TwoFactorVerifyView({
               style={{
                 background: 'none',
                 border: 'none',
-                color: 'var(--theme-text)',
+                color: 'var(--color-text)',
                 opacity: 0.7,
                 fontSize: 'var(--font-size-small)',
                 textDecoration: 'underline',

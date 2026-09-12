@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef, type FormEvent } from 'react'
-import { useRouter } from 'next/navigation.js'
+import { useRouter } from '@payloadcms/ui'
 import { createAuthClient } from 'better-auth/react'
 import { twoFactorClient, magicLinkClient, emailOTPClient } from 'better-auth/client/plugins'
 import { hasAnyRole, hasAllRoles, normalizeRoles } from '../utils/access.js'

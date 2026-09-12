@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { useRouter } from 'next/navigation.js'
+import { useRouter } from '@payloadcms/ui'
 import { useConfig } from '@payloadcms/ui'
 import { useAuthMountPath } from './useAuthMountPath.js'
 

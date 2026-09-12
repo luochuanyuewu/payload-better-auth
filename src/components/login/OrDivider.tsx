@@ -8,11 +8,11 @@ export function OrDivider() {
         gap: 'calc(var(--base) * 1)',
       }}
     >
-      <div style={{ flex: 1, height: '1px', background: 'var(--theme-elevation-150)' }} />
-      <span style={{ color: 'var(--theme-text)', opacity: 0.6, fontSize: 'var(--font-size-small)' }}>
+      <div style={{ flex: 1, height: '1px', background: 'var(--color-border)' }} />
+      <span style={{ color: 'var(--color-text)', opacity: 0.6, fontSize: 'var(--font-size-small)' }}>
         or
       </span>
-      <div style={{ flex: 1, height: '1px', background: 'var(--theme-elevation-150)' }} />
+      <div style={{ flex: 1, height: '1px', background: 'var(--color-border)' }} />
     </div>
   )
 }

@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
-import { useRouter } from 'next/navigation.js'
+import { useRouter } from '@payloadcms/ui'
 import { useConfig } from '@payloadcms/ui'
 
 export type BeforeLoginProps = {
@@ -34,8 +34,8 @@ export function BeforeLogin({ loginUrl }: BeforeLoginProps = {}) {
         minHeight: '100vh',
         alignItems: 'center',
         justifyContent: 'center',
-        background: 'var(--theme-bg)',
-        color: 'var(--theme-text)',
+        background: 'var(--color-bg)',
+        color: 'var(--color-text)',
       }}
     >
       <div>Redirecting to login...</div>

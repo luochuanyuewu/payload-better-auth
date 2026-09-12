@@ -1,6 +1,6 @@
 'use client'
 
-import { useRouter } from 'next/navigation.js'
+import { useRouter } from '@payloadcms/ui'
 import { useCallback } from 'react'
 import { useAuth, useDocumentInfo } from '@payloadcms/ui'
 import { TwoFactorManagementClient } from '../TwoFactorManagementClient.js'

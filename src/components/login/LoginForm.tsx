@@ -40,7 +40,7 @@ export function LoginForm({
 
         <h1
           style={{
-            color: 'var(--theme-text)',
+            color: 'var(--color-text)',
             fontSize: 'var(--font-size-h3)',
             fontWeight: 600,
             textAlign: 'center',
@@ -72,7 +72,7 @@ export function LoginForm({
                 style={{
                   background: 'none',
                   border: 'none',
-                  color: 'var(--theme-text)',
+                  color: 'var(--color-text)',
                   opacity: 0.7,
                   cursor: 'pointer',
                   fontSize: 'var(--font-size-small)',
@@ -119,7 +119,7 @@ export function LoginForm({
               marginTop: 'var(--base)',
               textAlign: 'center',
               fontSize: 'var(--font-size-small)',
-              color: 'var(--theme-text)',
+              color: 'var(--color-text)',
               opacity: 0.7,
             }}
           >
@@ -133,7 +133,7 @@ export function LoginForm({
               marginTop: 'calc(var(--base) * 1.5)',
               textAlign: 'center',
               fontSize: 'var(--font-size-small)',
-              color: 'var(--theme-text)',
+              color: 'var(--color-text)',
               opacity: 0.8,
             }}
           >
@@ -144,7 +144,7 @@ export function LoginForm({
               style={{
                 background: 'none',
                 border: 'none',
-                color: 'var(--theme-elevation-800)',
+                color: 'var(--color-text)',
                 cursor: 'pointer',
                 fontSize: 'inherit',
                 textDecoration: 'underline',

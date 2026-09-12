@@ -32,7 +32,7 @@ function copyFor(method: TwoFactorMethod, codeLength: number): { hint: string; l
 const linkStyle: React.CSSProperties = {
   background: 'transparent',
   border: 'none',
-  color: 'var(--theme-text)',
+  color: 'var(--color-text)',
   cursor: 'pointer',
   fontSize: 'var(--font-size-small)',
   opacity: 0.7,
@@ -111,7 +111,7 @@ export function TwoFactorForm({
 
         <h1
           style={{
-            color: 'var(--theme-text)',
+            color: 'var(--color-text)',
             fontSize: 'var(--font-size-h3)',
             fontWeight: 600,
             margin: '0 0 calc(var(--base) * 0.5) 0',
@@ -123,7 +123,7 @@ export function TwoFactorForm({
 
         <p
           style={{
-            color: 'var(--theme-text)',
+            color: 'var(--color-text)',
             opacity: 0.7,
             fontSize: 'var(--font-size-small)',
             textAlign: 'center',
@@ -139,7 +139,7 @@ export function TwoFactorForm({
               htmlFor="totp-code"
               style={{
                 display: 'block',
-                color: 'var(--theme-text)',
+                color: 'var(--color-text)',
                 marginBottom: 'calc(var(--base) * 0.5)',
                 fontSize: 'var(--font-size-small)',
                 fontWeight: 500,
@@ -159,10 +159,10 @@ export function TwoFactorForm({
                 style={{
                   width: '100%',
                   padding: 'calc(var(--base) * 0.75)',
-                  background: 'var(--theme-input-bg)',
-                  border: '1px solid var(--theme-elevation-150)',
+                  background: 'var(--color-bg)',
+                  border: '1px solid var(--color-border)',
                   borderRadius: 'var(--style-radius-s)',
-                  color: 'var(--theme-text)',
+                  color: 'var(--color-text)',
                   fontSize: 'var(--font-size-base)',
                   outline: 'none',
                   boxSizing: 'border-box',
@@ -232,7 +232,7 @@ export function TwoFactorForm({
             padding: 'calc(var(--base) * 0.5)',
             background: 'transparent',
             border: 'none',
-            color: 'var(--theme-text)',
+            color: 'var(--color-text)',
             opacity: 0.7,
             fontSize: 'var(--font-size-small)',
             cursor: 'pointer',

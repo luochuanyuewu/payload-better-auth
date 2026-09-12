@@ -184,13 +184,13 @@ export function TwoFactorSetupView({
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          background: 'var(--theme-bg)',
+          background: 'var(--color-bg)',
           padding: 'var(--base)',
         }}
       >
         <div
           style={{
-            background: 'var(--theme-elevation-50)',
+            background: 'var(--color-bg-elevated)',
             padding: 'calc(var(--base) * 2)',
             borderRadius: 'var(--style-radius-m)',
             boxShadow: '0 2px 20px rgba(0, 0, 0, 0.1)',
@@ -206,7 +206,7 @@ export function TwoFactorSetupView({
 
           <h1
             style={{
-              color: 'var(--theme-text)',
+              color: 'var(--color-text)',
               fontSize: 'var(--font-size-h3)',
               fontWeight: 600,
               margin: '0 0 calc(var(--base) * 0.5) 0',
@@ -218,7 +218,7 @@ export function TwoFactorSetupView({
 
           <p
             style={{
-              color: 'var(--theme-text)',
+              color: 'var(--color-text)',
               opacity: 0.7,
               fontSize: 'var(--font-size-small)',
               textAlign: 'center',
@@ -234,7 +234,7 @@ export function TwoFactorSetupView({
                 htmlFor="password"
                 style={{
                   display: 'block',
-                  color: 'var(--theme-text)',
+                  color: 'var(--color-text)',
                   marginBottom: 'calc(var(--base) * 0.5)',
                   fontSize: 'var(--font-size-small)',
                   fontWeight: 500,
@@ -253,10 +253,10 @@ export function TwoFactorSetupView({
                 style={{
                   width: '100%',
                   padding: 'calc(var(--base) * 0.75)',
-                  background: 'var(--theme-input-bg)',
-                  border: '1px solid var(--theme-elevation-150)',
+                  background: 'var(--color-bg)',
+                  border: '1px solid var(--color-border)',
                   borderRadius: 'var(--style-radius-s)',
-                  color: 'var(--theme-text)',
+                  color: 'var(--color-text)',
                   fontSize: 'var(--font-size-base)',
                   outline: 'none',
                   boxSizing: 'border-box',
@@ -267,13 +267,13 @@ export function TwoFactorSetupView({
             {error && (
               <div
                 style={{
-                  color: 'var(--theme-error-500)',
+                  color: 'var(--color-text-danger)',
                   marginBottom: 'var(--base)',
                   fontSize: 'var(--font-size-small)',
                   padding: 'calc(var(--base) * 0.5)',
-                  background: 'var(--theme-error-50)',
+                  background: 'var(--color-bg-danger-tertiary)',
                   borderRadius: 'var(--style-radius-s)',
-                  border: '1px solid var(--theme-error-200)',
+                  border: '1px solid var(--color-border-danger)',
                 }}
               >
                 {error}
@@ -286,10 +286,10 @@ export function TwoFactorSetupView({
               style={{
                 width: '100%',
                 padding: 'calc(var(--base) * 0.75)',
-                background: 'var(--theme-elevation-800)',
+                background: 'var(--color-text)',
                 border: 'none',
                 borderRadius: 'var(--style-radius-s)',
-                color: 'var(--theme-elevation-50)',
+                color: 'var(--color-bg-elevated)',
                 fontSize: 'var(--font-size-base)',
                 fontWeight: 500,
                 cursor: loading || password.length === 0 ? 'not-allowed' : 'pointer',
@@ -315,13 +315,13 @@ export function TwoFactorSetupView({
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          background: 'var(--theme-bg)',
+          background: 'var(--color-bg)',
           padding: 'var(--base)',
         }}
       >
         <div
           style={{
-            background: 'var(--theme-elevation-50)',
+            background: 'var(--color-bg-elevated)',
             padding: 'calc(var(--base) * 2)',
             borderRadius: 'var(--style-radius-m)',
             boxShadow: '0 2px 20px rgba(0, 0, 0, 0.1)',
@@ -337,7 +337,7 @@ export function TwoFactorSetupView({
 
           <h1
             style={{
-              color: 'var(--theme-text)',
+              color: 'var(--color-text)',
               fontSize: 'var(--font-size-h3)',
               fontWeight: 600,
               margin: '0 0 calc(var(--base) * 0.5) 0',
@@ -349,7 +349,7 @@ export function TwoFactorSetupView({
 
           <p
             style={{
-              color: 'var(--theme-text)',
+              color: 'var(--color-text)',
               opacity: 0.7,
               fontSize: 'var(--font-size-small)',
               textAlign: 'center',
@@ -363,13 +363,13 @@ export function TwoFactorSetupView({
             <>
               <div
                 style={{
-                  color: 'var(--theme-error-500)',
+                  color: 'var(--color-text-danger)',
                   marginBottom: 'var(--base)',
                   fontSize: 'var(--font-size-small)',
                   padding: 'calc(var(--base) * 0.5)',
-                  background: 'var(--theme-error-50)',
+                  background: 'var(--color-bg-danger-tertiary)',
                   borderRadius: 'var(--style-radius-s)',
-                  border: '1px solid var(--theme-error-200)',
+                  border: '1px solid var(--color-border-danger)',
                 }}
               >
                 {error}
@@ -382,10 +382,10 @@ export function TwoFactorSetupView({
                 style={{
                   width: '100%',
                   padding: 'calc(var(--base) * 0.75)',
-                  background: 'var(--theme-elevation-800)',
+                  background: 'var(--color-text)',
                   border: 'none',
                   borderRadius: 'var(--style-radius-s)',
-                  color: 'var(--theme-elevation-50)',
+                  color: 'var(--color-bg-elevated)',
                   fontSize: 'var(--font-size-base)',
                   fontWeight: 500,
                   cursor: loading ? 'not-allowed' : 'pointer',
@@ -411,13 +411,13 @@ export function TwoFactorSetupView({
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          background: 'var(--theme-bg)',
+          background: 'var(--color-bg)',
           padding: 'var(--base)',
         }}
       >
         <div
           style={{
-            background: 'var(--theme-elevation-50)',
+            background: 'var(--color-bg-elevated)',
             padding: 'calc(var(--base) * 2)',
             borderRadius: 'var(--style-radius-m)',
             boxShadow: '0 2px 20px rgba(0, 0, 0, 0.1)',
@@ -434,7 +434,7 @@ export function TwoFactorSetupView({
 
           <h1
             style={{
-              color: 'var(--theme-success-500)',
+              color: 'var(--color-text-success)',
               fontSize: 'var(--font-size-h3)',
               fontWeight: 600,
               margin: '0 0 var(--base) 0',
@@ -445,7 +445,7 @@ export function TwoFactorSetupView({
 
           <p
             style={{
-              color: 'var(--theme-text)',
+              color: 'var(--color-text)',
               opacity: 0.8,
               marginBottom: 'calc(var(--base) * 1.5)',
               fontSize: 'var(--font-size-small)',
@@ -459,10 +459,10 @@ export function TwoFactorSetupView({
             style={{
               display: 'inline-block',
               padding: 'calc(var(--base) * 0.75) calc(var(--base) * 1.5)',
-              background: 'var(--theme-elevation-800)',
+              background: 'var(--color-text)',
               border: 'none',
               borderRadius: 'var(--style-radius-s)',
-              color: 'var(--theme-elevation-50)',
+              color: 'var(--color-bg-elevated)',
               fontSize: 'var(--font-size-base)',
               fontWeight: 500,
               textDecoration: 'none',
@@ -484,13 +484,13 @@ export function TwoFactorSetupView({
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          background: 'var(--theme-bg)',
+          background: 'var(--color-bg)',
           padding: 'var(--base)',
         }}
       >
         <div
           style={{
-            background: 'var(--theme-elevation-50)',
+            background: 'var(--color-bg-elevated)',
             padding: 'calc(var(--base) * 2)',
             borderRadius: 'var(--style-radius-m)',
             boxShadow: '0 2px 20px rgba(0, 0, 0, 0.1)',
@@ -511,7 +511,7 @@ export function TwoFactorSetupView({
 
           <h1
             style={{
-              color: 'var(--theme-text)',
+              color: 'var(--color-text)',
               fontSize: 'var(--font-size-h3)',
               fontWeight: 600,
               margin: '0 0 calc(var(--base) * 0.5) 0',
@@ -523,7 +523,7 @@ export function TwoFactorSetupView({
 
           <p
             style={{
-              color: 'var(--theme-text)',
+              color: 'var(--color-text)',
               opacity: 0.7,
               fontSize: 'var(--font-size-small)',
               textAlign: 'center',
@@ -535,7 +535,7 @@ export function TwoFactorSetupView({
 
           <div
             style={{
-              background: 'var(--theme-elevation-100)',
+              background: 'var(--color-bg-secondary)',
               padding: 'var(--base)',
               borderRadius: 'var(--style-radius-s)',
               marginBottom: 'calc(var(--base) * 1.5)',
@@ -554,7 +554,7 @@ export function TwoFactorSetupView({
                 <div
                   key={index}
                   style={{
-                    color: 'var(--theme-text)',
+                    color: 'var(--color-text)',
                     padding: 'calc(var(--base) * 0.25)',
                   }}
                 >
@@ -576,10 +576,10 @@ export function TwoFactorSetupView({
               style={{
                 flex: 1,
                 padding: 'calc(var(--base) * 0.5)',
-                background: 'var(--theme-elevation-150)',
+                background: 'var(--color-border)',
                 border: 'none',
                 borderRadius: 'var(--style-radius-s)',
-                color: 'var(--theme-text)',
+                color: 'var(--color-text)',
                 fontSize: 'var(--font-size-small)',
                 cursor: 'pointer',
               }}
@@ -595,10 +595,10 @@ export function TwoFactorSetupView({
               style={{
                 flex: 1,
                 padding: 'calc(var(--base) * 0.5)',
-                background: 'var(--theme-elevation-150)',
+                background: 'var(--color-border)',
                 border: 'none',
                 borderRadius: 'var(--style-radius-s)',
-                color: 'var(--theme-text)',
+                color: 'var(--color-text)',
                 fontSize: 'var(--font-size-small)',
                 cursor: 'pointer',
               }}
@@ -612,10 +612,10 @@ export function TwoFactorSetupView({
             style={{
               width: '100%',
               padding: 'calc(var(--base) * 0.75)',
-              background: 'var(--theme-elevation-800)',
+              background: 'var(--color-text)',
               border: 'none',
               borderRadius: 'var(--style-radius-s)',
-              color: 'var(--theme-elevation-50)',
+              color: 'var(--color-bg-elevated)',
               fontSize: 'var(--font-size-base)',
               fontWeight: 500,
               cursor: 'pointer',
@@ -636,13 +636,13 @@ export function TwoFactorSetupView({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        background: 'var(--theme-bg)',
+        background: 'var(--color-bg)',
         padding: 'var(--base)',
       }}
     >
       <div
         style={{
-          background: 'var(--theme-elevation-50)',
+          background: 'var(--color-bg-elevated)',
           padding: 'calc(var(--base) * 2)',
           borderRadius: 'var(--style-radius-m)',
           boxShadow: '0 2px 20px rgba(0, 0, 0, 0.1)',
@@ -663,7 +663,7 @@ export function TwoFactorSetupView({
 
         <h1
           style={{
-            color: 'var(--theme-text)',
+            color: 'var(--color-text)',
             fontSize: 'var(--font-size-h3)',
             fontWeight: 600,
             margin: '0 0 calc(var(--base) * 0.5) 0',
@@ -675,7 +675,7 @@ export function TwoFactorSetupView({
 
         <p
           style={{
-            color: 'var(--theme-text)',
+            color: 'var(--color-text)',
             opacity: 0.7,
             fontSize: 'var(--font-size-small)',
             textAlign: 'center',
@@ -704,7 +704,7 @@ export function TwoFactorSetupView({
               marginSize={2}
               title="QR code for authenticator app"
               style={{
-                border: '1px solid var(--theme-elevation-150)',
+                border: '1px solid var(--color-border)',
                 borderRadius: 'var(--style-radius-s)',
               }}
             />
@@ -720,7 +720,7 @@ export function TwoFactorSetupView({
           >
             <p
               style={{
-                color: 'var(--theme-text)',
+                color: 'var(--color-text)',
                 opacity: 0.7,
                 fontSize: 'var(--font-size-small)',
                 marginBottom: 'calc(var(--base) * 0.5)',
@@ -732,11 +732,11 @@ export function TwoFactorSetupView({
               style={{
                 display: 'inline-block',
                 padding: 'calc(var(--base) * 0.5)',
-                background: 'var(--theme-elevation-100)',
+                background: 'var(--color-bg-secondary)',
                 borderRadius: 'var(--style-radius-s)',
                 fontFamily: 'monospace',
                 fontSize: 'var(--font-size-small)',
-                color: 'var(--theme-text)',
+                color: 'var(--color-text)',
                 wordBreak: 'break-all',
               }}
             >
@@ -751,7 +751,7 @@ export function TwoFactorSetupView({
               htmlFor="code"
               style={{
                 display: 'block',
-                color: 'var(--theme-text)',
+                color: 'var(--color-text)',
                 marginBottom: 'calc(var(--base) * 0.5)',
                 fontSize: 'var(--font-size-small)',
                 fontWeight: 500,
@@ -772,10 +772,10 @@ export function TwoFactorSetupView({
               style={{
                 width: '100%',
                 padding: 'calc(var(--base) * 0.75)',
-                background: 'var(--theme-input-bg)',
-                border: '1px solid var(--theme-elevation-150)',
+                background: 'var(--color-bg)',
+                border: '1px solid var(--color-border)',
                 borderRadius: 'var(--style-radius-s)',
-                color: 'var(--theme-text)',
+                color: 'var(--color-text)',
                 fontSize: 'var(--font-size-h4)',
                 fontFamily: 'monospace',
                 textAlign: 'center',
@@ -789,13 +789,13 @@ export function TwoFactorSetupView({
           {error && (
             <div
               style={{
-                color: 'var(--theme-error-500)',
+                color: 'var(--color-text-danger)',
                 marginBottom: 'var(--base)',
                 fontSize: 'var(--font-size-small)',
                 padding: 'calc(var(--base) * 0.5)',
-                background: 'var(--theme-error-50)',
+                background: 'var(--color-bg-danger-tertiary)',
                 borderRadius: 'var(--style-radius-s)',
-                border: '1px solid var(--theme-error-200)',
+                border: '1px solid var(--color-border-danger)',
               }}
             >
               {error}
@@ -808,10 +808,10 @@ export function TwoFactorSetupView({
             style={{
               width: '100%',
               padding: 'calc(var(--base) * 0.75)',
-              background: 'var(--theme-elevation-800)',
+              background: 'var(--color-text)',
               border: 'none',
               borderRadius: 'var(--style-radius-s)',
-              color: 'var(--theme-elevation-50)',
+              color: 'var(--color-bg-elevated)',
               fontSize: 'var(--font-size-base)',
               fontWeight: 500,
               cursor: loading || verificationCode.length !== 6 ? 'not-allowed' : 'pointer',

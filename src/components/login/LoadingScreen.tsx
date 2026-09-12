@@ -6,10 +6,10 @@ export function LoadingScreen() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        background: 'var(--theme-bg)',
+        background: 'var(--color-bg)',
       }}
     >
-      <div style={{ color: 'var(--theme-text)', opacity: 0.7 }}>
+      <div style={{ color: 'var(--color-text)', opacity: 0.7 }}>
         Loading...
       </div>
     </div>

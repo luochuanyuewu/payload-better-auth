@@ -18,7 +18,7 @@ export function ForgotPasswordForm({ email, onEmailChange, onSubmit, onBack, loa
 
         <h1
           style={{
-            color: 'var(--theme-text)',
+            color: 'var(--color-text)',
             fontSize: 'var(--font-size-h3)',
             fontWeight: 600,
             margin: '0 0 calc(var(--base) * 0.5) 0',
@@ -30,7 +30,7 @@ export function ForgotPasswordForm({ email, onEmailChange, onSubmit, onBack, loa
 
         <p
           style={{
-            color: 'var(--theme-text)',
+            color: 'var(--color-text)',
             opacity: 0.7,
             fontSize: 'var(--font-size-small)',
             textAlign: 'center',
@@ -59,7 +59,7 @@ export function ForgotPasswordForm({ email, onEmailChange, onSubmit, onBack, loa
             padding: 'calc(var(--base) * 0.5)',
             background: 'transparent',
             border: 'none',
-            color: 'var(--theme-text)',
+            color: 'var(--color-text)',
             opacity: 0.7,
             fontSize: 'var(--font-size-small)',
             cursor: 'pointer',

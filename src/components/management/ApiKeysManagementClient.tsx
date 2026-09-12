@@ -319,7 +319,7 @@ export function ApiKeysManagementClient({
         >
           <h1
             style={{
-              color: 'var(--theme-text)',
+              color: 'var(--color-text)',
               fontSize: 'var(--font-size-h2)',
               fontWeight: 600,
               margin: 0,
@@ -332,10 +332,10 @@ export function ApiKeysManagementClient({
             onClick={() => setShowCreateForm(true)}
             style={{
               padding: 'calc(var(--base) * 0.5) calc(var(--base) * 1)',
-              background: 'var(--theme-elevation-800)',
+              background: 'var(--color-text)',
               border: 'none',
               borderRadius: 'var(--style-radius-s)',
-              color: 'var(--theme-elevation-50)',
+              color: 'var(--color-bg-elevated)',
               fontSize: 'var(--font-size-small)',
               cursor: 'pointer',
             }}
@@ -347,13 +347,13 @@ export function ApiKeysManagementClient({
         {error && (
           <div
             style={{
-              color: 'var(--theme-error-500)',
+              color: 'var(--color-text-danger)',
               marginBottom: 'var(--base)',
               fontSize: 'var(--font-size-small)',
               padding: 'calc(var(--base) * 0.75)',
-              background: 'var(--theme-error-50)',
+              background: 'var(--color-bg-danger-tertiary)',
               borderRadius: 'var(--style-radius-s)',
-              border: '1px solid var(--theme-error-200)',
+              border: '1px solid var(--color-border-danger)',
             }}
           >
             {error}
@@ -365,14 +365,14 @@ export function ApiKeysManagementClient({
             style={{
               marginBottom: 'calc(var(--base) * 1.5)',
               padding: 'calc(var(--base) * 1)',
-              background: 'var(--theme-success-50)',
+              background: 'var(--color-bg-success-tertiary)',
               borderRadius: 'var(--style-radius-m)',
-              border: '1px solid var(--theme-success-200)',
+              border: '1px solid var(--color-border-success)',
             }}
           >
             <div
               style={{
-                color: 'var(--theme-success-700)',
+                color: 'var(--color-text-success)',
                 fontWeight: 500,
                 marginBottom: 'calc(var(--base) * 0.5)',
               }}
@@ -381,7 +381,7 @@ export function ApiKeysManagementClient({
             </div>
             <p
               style={{
-                color: 'var(--theme-text)',
+                color: 'var(--color-text)',
                 opacity: 0.8,
                 fontSize: 'var(--font-size-small)',
                 marginBottom: 'calc(var(--base) * 0.5)',
@@ -400,11 +400,11 @@ export function ApiKeysManagementClient({
                 style={{
                   flex: 1,
                   padding: 'calc(var(--base) * 0.5)',
-                  background: 'var(--theme-elevation-100)',
+                  background: 'var(--color-bg-secondary)',
                   borderRadius: 'var(--style-radius-s)',
                   fontFamily: 'monospace',
                   fontSize: 'var(--font-size-small)',
-                  color: 'var(--theme-text)',
+                  color: 'var(--color-text)',
                   wordBreak: 'break-all',
                 }}
               >
@@ -416,7 +416,7 @@ export function ApiKeysManagementClient({
                 }}
                 style={{
                   padding: 'calc(var(--base) * 0.5)',
-                  background: 'var(--theme-elevation-200)',
+                  background: 'var(--color-border)',
                   border: 'none',
                   borderRadius: 'var(--style-radius-s)',
                   cursor: 'pointer',
@@ -433,14 +433,14 @@ export function ApiKeysManagementClient({
             style={{
               marginBottom: 'calc(var(--base) * 1.5)',
               padding: 'calc(var(--base) * 1.5)',
-              background: 'var(--theme-elevation-50)',
+              background: 'var(--color-bg-elevated)',
               borderRadius: 'var(--style-radius-m)',
-              border: '1px solid var(--theme-elevation-100)',
+              border: '1px solid var(--color-bg-secondary)',
             }}
           >
             <h2
               style={{
-                color: 'var(--theme-text)',
+                color: 'var(--color-text)',
                 fontSize: 'var(--font-size-h4)',
                 fontWeight: 500,
                 margin: '0 0 var(--base) 0',
@@ -453,7 +453,7 @@ export function ApiKeysManagementClient({
                 <label
                   style={{
                     display: 'block',
-                    color: 'var(--theme-text)',
+                    color: 'var(--color-text)',
                     fontSize: 'var(--font-size-small)',
                     marginBottom: 'calc(var(--base) * 0.25)',
                   }}
@@ -469,10 +469,10 @@ export function ApiKeysManagementClient({
                   style={{
                     width: '100%',
                     padding: 'calc(var(--base) * 0.5)',
-                    background: 'var(--theme-input-bg)',
-                    border: '1px solid var(--theme-elevation-150)',
+                    background: 'var(--color-bg)',
+                    border: '1px solid var(--color-border)',
                     borderRadius: 'var(--style-radius-s)',
-                    color: 'var(--theme-text)',
+                    color: 'var(--color-text)',
                     boxSizing: 'border-box',
                   }}
                 />
@@ -481,7 +481,7 @@ export function ApiKeysManagementClient({
                 <label
                   style={{
                     display: 'block',
-                    color: 'var(--theme-text)',
+                    color: 'var(--color-text)',
                     fontSize: 'var(--font-size-small)',
                     marginBottom: 'calc(var(--base) * 0.25)',
                   }}
@@ -497,10 +497,10 @@ export function ApiKeysManagementClient({
                   style={{
                     width: '100%',
                     padding: 'calc(var(--base) * 0.5)',
-                    background: 'var(--theme-input-bg)',
-                    border: '1px solid var(--theme-elevation-150)',
+                    background: 'var(--color-bg)',
+                    border: '1px solid var(--color-border)',
                     borderRadius: 'var(--style-radius-s)',
-                    color: 'var(--theme-text)',
+                    color: 'var(--color-text)',
                     boxSizing: 'border-box',
                   }}
                 />
@@ -512,7 +512,7 @@ export function ApiKeysManagementClient({
                   <label
                     style={{
                       display: 'block',
-                      color: 'var(--theme-text)',
+                      color: 'var(--color-text)',
                       fontSize: 'var(--font-size-small)',
                       marginBottom: 'calc(var(--base) * 0.25)',
                     }}
@@ -525,10 +525,10 @@ export function ApiKeysManagementClient({
                     style={{
                       width: '100%',
                       padding: 'calc(var(--base) * 0.5)',
-                      background: 'var(--theme-input-bg)',
-                      border: '1px solid var(--theme-elevation-150)',
+                      background: 'var(--color-bg)',
+                      border: '1px solid var(--color-border)',
                       borderRadius: 'var(--style-radius-s)',
-                      color: 'var(--theme-text)',
+                      color: 'var(--color-text)',
                       boxSizing: 'border-box',
                     }}
                   >
@@ -543,7 +543,7 @@ export function ApiKeysManagementClient({
                     style={{
                       marginTop: 'calc(var(--base) * 0.25)',
                       fontSize: '11px',
-                      color: 'var(--theme-elevation-600)',
+                      color: 'var(--color-text-secondary)',
                     }}
                   >
                     {selectedOrganizationId
@@ -559,7 +559,7 @@ export function ApiKeysManagementClient({
                   <label
                     style={{
                       display: 'block',
-                      color: 'var(--theme-text)',
+                      color: 'var(--color-text)',
                       fontSize: 'var(--font-size-small)',
                       marginBottom: 'calc(var(--base) * 0.5)',
                     }}
@@ -595,9 +595,9 @@ export function ApiKeysManagementClient({
                       style={{
                         padding: '4px 8px',
                         background: 'transparent',
-                        border: '1px solid var(--theme-elevation-200)',
+                        border: '1px solid var(--color-border)',
                         borderRadius: 'var(--style-radius-s)',
-                        color: 'var(--theme-text)',
+                        color: 'var(--color-text)',
                         fontSize: '11px',
                         cursor: 'pointer',
                         opacity: 0.8,
@@ -611,9 +611,9 @@ export function ApiKeysManagementClient({
                       style={{
                         padding: '4px 8px',
                         background: 'transparent',
-                        border: '1px solid var(--theme-elevation-200)',
+                        border: '1px solid var(--color-border)',
                         borderRadius: 'var(--style-radius-s)',
-                        color: 'var(--theme-text)',
+                        color: 'var(--color-text)',
                         fontSize: '11px',
                         cursor: 'pointer',
                         opacity: 0.8,
@@ -626,8 +626,8 @@ export function ApiKeysManagementClient({
                   {/* Permission grid — collection rows with read/write checkboxes */}
                   <div
                     style={{
-                      background: 'var(--theme-input-bg)',
-                      border: '1px solid var(--theme-elevation-150)',
+                      background: 'var(--color-bg)',
+                      border: '1px solid var(--color-border)',
                       borderRadius: 'var(--style-radius-s)',
                       maxHeight: '400px',
                       overflowY: 'auto',
@@ -640,10 +640,10 @@ export function ApiKeysManagementClient({
                         gridTemplateColumns: '1fr 60px 60px',
                         gap: 'calc(var(--base) * 0.5)',
                         padding: 'calc(var(--base) * 0.5) calc(var(--base) * 0.75)',
-                        borderBottom: '1px solid var(--theme-elevation-150)',
+                        borderBottom: '1px solid var(--color-border)',
                         fontSize: '11px',
                         fontWeight: 600,
-                        color: 'var(--theme-elevation-600)',
+                        color: 'var(--color-text-secondary)',
                         textTransform: 'uppercase',
                         letterSpacing: '0.5px',
                       }}
@@ -666,14 +666,14 @@ export function ApiKeysManagementClient({
                             gridTemplateColumns: '1fr 60px 60px',
                             gap: 'calc(var(--base) * 0.5)',
                             padding: 'calc(var(--base) * 0.5) calc(var(--base) * 0.75)',
-                            borderBottom: '1px solid var(--theme-elevation-100)',
+                            borderBottom: '1px solid var(--color-bg-secondary)',
                             alignItems: 'center',
-                            background: (hasRead || hasWrite) ? 'var(--theme-elevation-50)' : 'transparent',
+                            background: (hasRead || hasWrite) ? 'var(--color-bg-elevated)' : 'transparent',
                           }}
                         >
                           <span
                             style={{
-                              color: 'var(--theme-text)',
+                              color: 'var(--color-text)',
                               fontSize: 'var(--font-size-small)',
                               fontWeight: 500,
                             }}
@@ -706,7 +706,7 @@ export function ApiKeysManagementClient({
                     style={{
                       marginTop: 'calc(var(--base) * 0.5)',
                       fontSize: '11px',
-                      color: selectedCount === 0 ? 'var(--theme-warning-500)' : 'var(--theme-elevation-600)',
+                      color: selectedCount === 0 ? 'var(--color-text-warning)' : 'var(--color-text-secondary)',
                     }}
                   >
                     {selectedCount === 0
@@ -722,10 +722,10 @@ export function ApiKeysManagementClient({
                   disabled={creating}
                   style={{
                     padding: 'calc(var(--base) * 0.5) calc(var(--base) * 1)',
-                    background: 'var(--theme-elevation-800)',
+                    background: 'var(--color-text)',
                     border: 'none',
                     borderRadius: 'var(--style-radius-s)',
-                    color: 'var(--theme-elevation-50)',
+                    color: 'var(--color-bg-elevated)',
                     fontSize: 'var(--font-size-small)',
                     cursor: creating ? 'not-allowed' : 'pointer',
                     opacity: creating ? 0.7 : 1,
@@ -739,9 +739,9 @@ export function ApiKeysManagementClient({
                   style={{
                     padding: 'calc(var(--base) * 0.5) calc(var(--base) * 1)',
                     background: 'transparent',
-                    border: '1px solid var(--theme-elevation-200)',
+                    border: '1px solid var(--color-border)',
                     borderRadius: 'var(--style-radius-s)',
-                    color: 'var(--theme-text)',
+                    color: 'var(--color-text)',
                     fontSize: 'var(--font-size-small)',
                     cursor: 'pointer',
                   }}
@@ -756,7 +756,7 @@ export function ApiKeysManagementClient({
         {loading ? (
           <div
             style={{
-              color: 'var(--theme-text)',
+              color: 'var(--color-text)',
               opacity: 0.7,
               textAlign: 'center',
               padding: 'calc(var(--base) * 3)',
@@ -767,7 +767,7 @@ export function ApiKeysManagementClient({
         ) : apiKeys.length === 0 ? (
           <div
             style={{
-              color: 'var(--theme-text)',
+              color: 'var(--color-text)',
               opacity: 0.7,
               textAlign: 'center',
               padding: 'calc(var(--base) * 3)',
@@ -778,10 +778,10 @@ export function ApiKeysManagementClient({
         ) : (
           <div
             style={{
-              background: 'var(--theme-elevation-50)',
+              background: 'var(--color-bg-elevated)',
               borderRadius: 'var(--style-radius-m)',
               overflow: 'hidden',
-              border: '1px solid var(--theme-elevation-100)',
+              border: '1px solid var(--color-bg-secondary)',
             }}
           >
             {apiKeys.map((key, index) => (
@@ -794,14 +794,14 @@ export function ApiKeysManagementClient({
                   padding: 'calc(var(--base) * 1)',
                   borderBottom:
                     index < apiKeys.length - 1
-                      ? '1px solid var(--theme-elevation-100)'
+                      ? '1px solid var(--color-bg-secondary)'
                       : 'none',
                 }}
               >
                 <div style={{ flex: 1 }}>
                   <div
                     style={{
-                      color: 'var(--theme-text)',
+                      color: 'var(--color-text)',
                       fontWeight: 500,
                       marginBottom: 'calc(var(--base) * 0.25)',
                     }}
@@ -810,7 +810,7 @@ export function ApiKeysManagementClient({
                   </div>
                   <div
                     style={{
-                      color: 'var(--theme-elevation-600)',
+                      color: 'var(--color-text-secondary)',
                       fontSize: 'var(--font-size-small)',
                     }}
                   >
@@ -833,10 +833,10 @@ export function ApiKeysManagementClient({
                       <span
                         style={{
                           padding: '2px 6px',
-                          background: 'var(--theme-elevation-150)',
+                          background: 'var(--color-border)',
                           borderRadius: 'var(--style-radius-s)',
                           fontSize: '11px',
-                          color: 'var(--theme-elevation-700)',
+                          color: 'var(--color-text-secondary)',
                           fontWeight: 500,
                         }}
                       >
@@ -863,10 +863,10 @@ export function ApiKeysManagementClient({
                           key={label}
                           style={{
                             padding: '2px 6px',
-                            background: 'var(--theme-elevation-100)',
+                            background: 'var(--color-bg-secondary)',
                             borderRadius: 'var(--style-radius-s)',
                             fontSize: '11px',
-                            color: 'var(--theme-elevation-700)',
+                            color: 'var(--color-text-secondary)',
                           }}
                         >
                           {label}
@@ -882,9 +882,9 @@ export function ApiKeysManagementClient({
                   style={{
                     padding: 'calc(var(--base) * 0.5) calc(var(--base) * 0.75)',
                     background: 'transparent',
-                    border: '1px solid var(--theme-error-300)',
+                    border: '1px solid var(--color-border-danger)',
                     borderRadius: 'var(--style-radius-s)',
-                    color: 'var(--theme-error-500)',
+                    color: 'var(--color-text-danger)',
                     fontSize: 'var(--font-size-small)',
                     cursor: deleting === key.id ? 'not-allowed' : 'pointer',
                     opacity: deleting === key.id ? 0.7 : 1,
@@ -921,13 +921,13 @@ function BulkButton({
       style={{
         padding: '4px 10px',
         background: active
-          ? 'var(--theme-elevation-700)'
+          ? 'var(--color-text-secondary)'
           : indeterminate
-          ? 'var(--theme-elevation-300)'
-          : 'var(--theme-elevation-100)',
+          ? 'var(--color-border)'
+          : 'var(--color-bg-secondary)',
         border: 'none',
         borderRadius: 'var(--style-radius-s)',
-        color: active ? 'var(--theme-elevation-50)' : 'var(--theme-text)',
+        color: active ? 'var(--color-bg-elevated)' : 'var(--color-text)',
         fontSize: '11px',
         fontWeight: 500,
         cursor: 'pointer',

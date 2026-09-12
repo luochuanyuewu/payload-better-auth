@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect, type FormEvent } from 'react'
-import { useRouter, useSearchParams } from 'next/navigation.js'
+import { useRouter, useSearchParams } from '@payloadcms/ui'
 import { useConfig } from '@payloadcms/ui'
 import { useAuthMountPath } from '../useAuthMountPath.js'
 
@@ -118,13 +118,13 @@ export function ResetPasswordView({
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          background: 'var(--theme-bg)',
+          background: 'var(--color-bg)',
           padding: 'var(--base)',
         }}
       >
         <div
           style={{
-            background: 'var(--theme-elevation-50)',
+            background: 'var(--color-bg-elevated)',
             padding: 'calc(var(--base) * 2)',
             borderRadius: 'var(--style-radius-m)',
             boxShadow: '0 2px 20px rgba(0, 0, 0, 0.1)',
@@ -141,7 +141,7 @@ export function ResetPasswordView({
 
           <h1
             style={{
-              color: 'var(--theme-success-500)',
+              color: 'var(--color-text-success)',
               fontSize: 'var(--font-size-h3)',
               fontWeight: 600,
               margin: '0 0 var(--base) 0',
@@ -152,7 +152,7 @@ export function ResetPasswordView({
 
           <p
             style={{
-              color: 'var(--theme-text)',
+              color: 'var(--color-text)',
               opacity: 0.8,
               marginBottom: 'calc(var(--base) * 1.5)',
               fontSize: 'var(--font-size-small)',
@@ -165,10 +165,10 @@ export function ResetPasswordView({
             onClick={() => router.push(resolvedAfterResetPath)}
             style={{
               padding: 'calc(var(--base) * 0.75) calc(var(--base) * 1.5)',
-              background: 'var(--theme-elevation-800)',
+              background: 'var(--color-text)',
               border: 'none',
               borderRadius: 'var(--style-radius-s)',
-              color: 'var(--theme-elevation-50)',
+              color: 'var(--color-bg-elevated)',
               fontSize: 'var(--font-size-base)',
               fontWeight: 500,
               cursor: 'pointer',
@@ -188,13 +188,13 @@ export function ResetPasswordView({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        background: 'var(--theme-bg)',
+        background: 'var(--color-bg)',
         padding: 'var(--base)',
       }}
     >
       <div
         style={{
-          background: 'var(--theme-elevation-50)',
+          background: 'var(--color-bg-elevated)',
           padding: 'calc(var(--base) * 2)',
           borderRadius: 'var(--style-radius-m)',
           boxShadow: '0 2px 20px rgba(0, 0, 0, 0.1)',
@@ -215,7 +215,7 @@ export function ResetPasswordView({
 
         <h1
           style={{
-            color: 'var(--theme-text)',
+            color: 'var(--color-text)',
             fontSize: 'var(--font-size-h3)',
             fontWeight: 600,
             marginBottom: 'calc(var(--base) * 0.5)',
@@ -228,7 +228,7 @@ export function ResetPasswordView({
 
         <p
           style={{
-            color: 'var(--theme-text)',
+            color: 'var(--color-text)',
             opacity: 0.7,
             fontSize: 'var(--font-size-small)',
             textAlign: 'center',
@@ -244,7 +244,7 @@ export function ResetPasswordView({
               htmlFor="password"
               style={{
                 display: 'block',
-                color: 'var(--theme-text)',
+                color: 'var(--color-text)',
                 marginBottom: 'calc(var(--base) * 0.5)',
                 fontSize: 'var(--font-size-small)',
                 fontWeight: 500,
@@ -263,10 +263,10 @@ export function ResetPasswordView({
               style={{
                 width: '100%',
                 padding: 'calc(var(--base) * 0.75)',
-                background: 'var(--theme-input-bg)',
-                border: '1px solid var(--theme-elevation-150)',
+                background: 'var(--color-bg)',
+                border: '1px solid var(--color-border)',
                 borderRadius: 'var(--style-radius-s)',
-                color: 'var(--theme-text)',
+                color: 'var(--color-text)',
                 fontSize: 'var(--font-size-base)',
                 outline: 'none',
                 boxSizing: 'border-box',
@@ -279,7 +279,7 @@ export function ResetPasswordView({
               htmlFor="confirmPassword"
               style={{
                 display: 'block',
-                color: 'var(--theme-text)',
+                color: 'var(--color-text)',
                 marginBottom: 'calc(var(--base) * 0.5)',
                 fontSize: 'var(--font-size-small)',
                 fontWeight: 500,
@@ -298,10 +298,10 @@ export function ResetPasswordView({
               style={{
                 width: '100%',
                 padding: 'calc(var(--base) * 0.75)',
-                background: 'var(--theme-input-bg)',
-                border: '1px solid var(--theme-elevation-150)',
+                background: 'var(--color-bg)',
+                border: '1px solid var(--color-border)',
                 borderRadius: 'var(--style-radius-s)',
-                color: 'var(--theme-text)',
+                color: 'var(--color-text)',
                 fontSize: 'var(--font-size-base)',
                 outline: 'none',
                 boxSizing: 'border-box',
@@ -312,13 +312,13 @@ export function ResetPasswordView({
           {error && (
             <div
               style={{
-                color: 'var(--theme-error-500)',
+                color: 'var(--color-text-danger)',
                 marginBottom: 'var(--base)',
                 fontSize: 'var(--font-size-small)',
                 padding: 'calc(var(--base) * 0.5)',
-                background: 'var(--theme-error-50)',
+                background: 'var(--color-bg-danger-tertiary)',
                 borderRadius: 'var(--style-radius-s)',
-                border: '1px solid var(--theme-error-200)',
+                border: '1px solid var(--color-border-danger)',
               }}
             >
               {error}
@@ -331,10 +331,10 @@ export function ResetPasswordView({
             style={{
               width: '100%',
               padding: 'calc(var(--base) * 0.75)',
-              background: 'var(--theme-elevation-800)',
+              background: 'var(--color-text)',
               border: 'none',
               borderRadius: 'var(--style-radius-s)',
-              color: 'var(--theme-elevation-50)',
+              color: 'var(--color-bg-elevated)',
               fontSize: 'var(--font-size-base)',
               fontWeight: 500,
               cursor: loading || !token ? 'not-allowed' : 'pointer',

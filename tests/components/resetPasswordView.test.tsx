@@ -15,11 +15,9 @@ const { searchParamsRef } = vi.hoisted(() => ({
   searchParamsRef: { current: new URLSearchParams() },
 }))
 
-vi.mock('next/navigation.js', () => ({
+vi.mock('@payloadcms/ui', () => ({
   useRouter: () => ({ push, refresh }),
   useSearchParams: () => searchParamsRef.current,
-}))
-vi.mock('@payloadcms/ui', () => ({
   useConfig: () => ({ config: { routes: { admin: '/admin', api: '/api' } } }),
 }))
 

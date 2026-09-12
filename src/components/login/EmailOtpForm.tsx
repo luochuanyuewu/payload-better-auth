@@ -21,7 +21,7 @@ export function EmailOtpForm({ email, code, onCodeChange, onSubmit, onBack, load
 
         <h1
           style={{
-            color: 'var(--theme-text)',
+            color: 'var(--color-text)',
             fontSize: 'var(--font-size-h3)',
             fontWeight: 600,
             margin: '0 0 calc(var(--base) * 0.5) 0',
@@ -33,7 +33,7 @@ export function EmailOtpForm({ email, code, onCodeChange, onSubmit, onBack, load
 
         <p
           style={{
-            color: 'var(--theme-text)',
+            color: 'var(--color-text)',
             opacity: 0.7,
             fontSize: 'var(--font-size-small)',
             textAlign: 'center',
@@ -49,7 +49,7 @@ export function EmailOtpForm({ email, code, onCodeChange, onSubmit, onBack, load
               htmlFor="email-otp-code"
               style={{
                 display: 'block',
-                color: 'var(--theme-text)',
+                color: 'var(--color-text)',
                 marginBottom: 'calc(var(--base) * 0.5)',
                 fontSize: 'var(--font-size-small)',
                 fontWeight: 500,
@@ -76,7 +76,7 @@ export function EmailOtpForm({ email, code, onCodeChange, onSubmit, onBack, load
             padding: 'calc(var(--base) * 0.5)',
             background: 'transparent',
             border: 'none',
-            color: 'var(--theme-text)',
+            color: 'var(--color-text)',
             opacity: 0.7,
             fontSize: 'var(--font-size-small)',
             cursor: 'pointer',

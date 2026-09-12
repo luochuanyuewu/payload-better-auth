@@ -5,7 +5,7 @@ export function AccessDeniedScreen({ onSignOut }: { onSignOut: () => void }) {
     <AuthCard center>
         <h1
           style={{
-            color: 'var(--theme-error-500)',
+            color: 'var(--color-text-danger)',
             fontSize: 'var(--font-size-h3)',
             fontWeight: 600,
             margin: '0 0 var(--base) 0',
@@ -15,7 +15,7 @@ export function AccessDeniedScreen({ onSignOut }: { onSignOut: () => void }) {
         </h1>
         <p
           style={{
-            color: 'var(--theme-text)',
+            color: 'var(--color-text)',
             opacity: 0.8,
             marginBottom: 'calc(var(--base) * 1.5)',
             fontSize: 'var(--font-size-small)',
@@ -28,10 +28,10 @@ export function AccessDeniedScreen({ onSignOut }: { onSignOut: () => void }) {
           onClick={onSignOut}
           style={{
             padding: 'calc(var(--base) * 0.75) calc(var(--base) * 1.5)',
-            background: 'var(--theme-elevation-150)',
+            background: 'var(--color-border)',
             border: 'none',
             borderRadius: 'var(--style-radius-s)',
-            color: 'var(--theme-text)',
+            color: 'var(--color-text)',
             fontSize: 'var(--font-size-base)',
             cursor: 'pointer',
           }}

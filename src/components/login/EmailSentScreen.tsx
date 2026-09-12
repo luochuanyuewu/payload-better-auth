@@ -20,7 +20,7 @@ export function EmailSentScreen({
         style={{
           width: '64px',
           height: '64px',
-          background: 'var(--theme-success-100)',
+          background: 'var(--color-bg-success-tertiary)',
           borderRadius: '50%',
           display: 'flex',
           alignItems: 'center',
@@ -34,7 +34,7 @@ export function EmailSentScreen({
 
       <h1
         style={{
-          color: 'var(--theme-text)',
+          color: 'var(--color-text)',
           fontSize: 'var(--font-size-h3)',
           fontWeight: 600,
           margin: '0 0 calc(var(--base) * 0.5) 0',
@@ -45,7 +45,7 @@ export function EmailSentScreen({
 
       <p
         style={{
-          color: 'var(--theme-text)',
+          color: 'var(--color-text)',
           opacity: 0.7,
           fontSize: 'var(--font-size-small)',
           marginBottom: 'calc(var(--base) * 1.5)',
@@ -57,7 +57,7 @@ export function EmailSentScreen({
       {note && (
         <p
           style={{
-            color: 'var(--theme-text)',
+            color: 'var(--color-text)',
             opacity: 0.6,
             fontSize: 'var(--font-size-small)',
             marginBottom: 'calc(var(--base) * 1.5)',
@@ -72,10 +72,10 @@ export function EmailSentScreen({
         onClick={onBack}
         style={{
           padding: 'calc(var(--base) * 0.75) calc(var(--base) * 1.5)',
-          background: 'var(--theme-elevation-150)',
+          background: 'var(--color-border)',
           border: 'none',
           borderRadius: 'var(--style-radius-s)',
-          color: 'var(--theme-text)',
+          color: 'var(--color-text)',
           fontSize: 'var(--font-size-base)',
           cursor: 'pointer',
         }}

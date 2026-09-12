@@ -200,7 +200,7 @@ export function TwoFactorManagementClient({
   return (
     <div className="field-type two-factor-management">
       {error && (
-        <Banner type="error">{error}</Banner>
+        <Banner type="danger">{error}</Banner>
       )}
 
       {step === 'status' && (
@@ -209,8 +209,8 @@ export function TwoFactorManagementClient({
             {isEnabled ? 'Two-factor authentication is enabled.' : 'Two-factor authentication is not enabled.'}
           </p>
           <Button
-            buttonStyle={isEnabled ? 'error' : 'secondary'}
-            size="small"
+            buttonStyle={isEnabled ? 'destructive' : 'secondary'}
+            size="medium"
             onClick={isEnabled ? handleDisableClick : handleEnableClick}
             disabled={actionLoading}
           >
@@ -234,10 +234,10 @@ export function TwoFactorManagementClient({
             style={{
               width: '100%',
               padding: 'var(--base)',
-              background: 'var(--theme-input-bg)',
-              border: '1px solid var(--theme-border-color)',
+              background: 'var(--color-bg)',
+              border: '1px solid var(--color-border)',
               borderRadius: 'var(--style-radius-s)',
-              color: 'var(--theme-text)',
+              color: 'var(--color-text)',
               fontSize: 'var(--base-body-size)',
               marginBottom: 'var(--base)',
               boxSizing: 'border-box',
@@ -246,7 +246,7 @@ export function TwoFactorManagementClient({
           <div style={{ display: 'flex', gap: 'calc(var(--base) * 0.5)' }}>
             <Button
               buttonStyle="primary"
-              size="small"
+              size="medium"
               onClick={handlePasswordContinue}
               disabled={actionLoading || !password}
             >
@@ -256,7 +256,7 @@ export function TwoFactorManagementClient({
             </Button>
             <Button
               buttonStyle="secondary"
-              size="small"
+              size="medium"
               onClick={() => setStep('status')}
             >
               Cancel
@@ -281,7 +281,7 @@ export function TwoFactorManagementClient({
             marginSize={2}
             title="QR code for authenticator app"
             style={{
-              border: '1px solid var(--theme-border-color)',
+              border: '1px solid var(--color-border)',
               borderRadius: 'var(--style-radius-s)',
               marginBottom: 'var(--base)',
             }}
@@ -296,11 +296,11 @@ export function TwoFactorManagementClient({
                 style={{
                   display: 'inline-block',
                   padding: 'calc(var(--base) * 0.5)',
-                  background: 'var(--theme-elevation-100)',
+                  background: 'var(--color-bg-secondary)',
                   borderRadius: 'var(--style-radius-s)',
                   fontFamily: 'monospace',
                   fontSize: 'var(--base-body-size)',
-                  color: 'var(--theme-text)',
+                  color: 'var(--color-text)',
                 }}
               >
                 {secret}
@@ -322,10 +322,10 @@ export function TwoFactorManagementClient({
               style={{
                 width: '200px',
                 padding: 'var(--base)',
-                background: 'var(--theme-input-bg)',
-                border: '1px solid var(--theme-border-color)',
+                background: 'var(--color-bg)',
+                border: '1px solid var(--color-border)',
                 borderRadius: 'var(--style-radius-s)',
-                color: 'var(--theme-text)',
+                color: 'var(--color-text)',
                 fontSize: '1.5rem',
                 fontFamily: 'monospace',
                 textAlign: 'center',
@@ -337,7 +337,7 @@ export function TwoFactorManagementClient({
             <br />
             <Button
               buttonStyle="primary"
-              size="small"
+              size="medium"
               onClick={handleVerify}
               disabled={actionLoading || verificationCode.length !== 6}
             >
@@ -349,13 +349,13 @@ export function TwoFactorManagementClient({
 
       {step === 'backup' && (
         <div>
-          <Banner type="info">
+          <Banner type="brand">
             Save these backup codes in a safe place. You can use them to sign in if you lose access to your authenticator app.
           </Banner>
 
           <div
             style={{
-              background: 'var(--theme-elevation-100)',
+              background: 'var(--color-bg-secondary)',
               padding: 'var(--base)',
               borderRadius: 'var(--style-radius-s)',
               marginTop: 'var(--base)',
@@ -374,7 +374,7 @@ export function TwoFactorManagementClient({
                 <div
                   key={index}
                   style={{
-                    color: 'var(--theme-text)',
+                    color: 'var(--color-text)',
                     padding: 'calc(var(--base) * 0.25)',
                   }}
                 >
@@ -387,7 +387,7 @@ export function TwoFactorManagementClient({
           <div style={{ display: 'flex', gap: 'calc(var(--base) * 0.5)' }}>
             <Button
               buttonStyle="secondary"
-              size="small"
+              size="medium"
               icon={<CopyIcon />}
               onClick={() => navigator.clipboard.writeText(backupCodes.join('\n'))}
             >
@@ -395,7 +395,7 @@ export function TwoFactorManagementClient({
             </Button>
             <Button
               buttonStyle="primary"
-              size="small"
+              size="medium"
               onClick={handleBackupContinue}
             >
               I've Saved My Codes

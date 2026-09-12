@@ -550,6 +550,7 @@ function generateCollection(
 
   return {
     slug,
+    versions: false,
     admin: {
       useAsTitle: titleField ?? 'id',
       group: adminGroup,

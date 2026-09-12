@@ -152,7 +152,7 @@ export function PasskeysManagementClient({
 
   return (
     <div className="field-type passkeys-management">
-      {error && <Banner type="error">{error}</Banner>}
+      {error && <Banner type="danger">{error}</Banner>}
       {success && <Banner type="success">{success}</Banner>}
 
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 'var(--base)' }}>
@@ -162,7 +162,7 @@ export function PasskeysManagementClient({
         {!showRegisterForm && (
           <Button
             buttonStyle="secondary"
-            size="small"
+            size="medium"
             icon={<PlusIcon />}
             onClick={() => setShowRegisterForm(true)}
           >
@@ -186,10 +186,10 @@ export function PasskeysManagementClient({
               style={{
                 width: '100%',
                 padding: 'var(--base)',
-                background: 'var(--theme-input-bg)',
-                border: '1px solid var(--theme-border-color)',
+                background: 'var(--color-bg)',
+                border: '1px solid var(--color-border)',
                 borderRadius: 'var(--style-radius-s)',
-                color: 'var(--theme-text)',
+                color: 'var(--color-text)',
                 fontSize: 'var(--base-body-size)',
                 boxSizing: 'border-box',
               }}
@@ -201,7 +201,7 @@ export function PasskeysManagementClient({
           <div style={{ display: 'flex', gap: 'calc(var(--base) * 0.5)' }}>
             <Button
               buttonStyle="primary"
-              size="small"
+              size="medium"
               onClick={handleRegister}
               disabled={registering}
             >
@@ -209,7 +209,7 @@ export function PasskeysManagementClient({
             </Button>
             <Button
               buttonStyle="secondary"
-              size="small"
+              size="medium"
               onClick={() => setShowRegisterForm(false)}
             >
               Cancel
@@ -225,7 +225,7 @@ export function PasskeysManagementClient({
       ) : (
         <div
           style={{
-            border: '1px solid var(--theme-border-color)',
+            border: '1px solid var(--color-border)',
             borderRadius: 'var(--style-radius-s)',
             overflow: 'hidden',
           }}
@@ -240,12 +240,12 @@ export function PasskeysManagementClient({
                 padding: 'var(--base)',
                 borderBottom:
                   index < passkeys.length - 1
-                    ? '1px solid var(--theme-border-color)'
+                    ? '1px solid var(--color-border)'
                     : 'none',
               }}
             >
               <div>
-                <div style={{ color: 'var(--theme-text)', fontWeight: 500 }}>
+                <div style={{ color: 'var(--color-text)', fontWeight: 500 }}>
                   {pk.name || 'Passkey'}
                 </div>
                 <p className="field-description" style={{ margin: 'calc(var(--base) * 0.25) 0 0 0' }}>
@@ -255,8 +255,8 @@ export function PasskeysManagementClient({
               </div>
 
               <Button
-                buttonStyle="error"
-                size="small"
+                buttonStyle="destructive"
+                size="medium"
                 icon={<XIcon />}
                 onClick={() => handleDelete(pk.id)}
                 disabled={deleting === pk.id}
