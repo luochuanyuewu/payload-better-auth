@@ -34,9 +34,9 @@ const linkStyle: React.CSSProperties = {
   border: 'none',
   color: 'var(--color-text)',
   cursor: 'pointer',
-  fontSize: 'var(--font-size-small)',
+  fontSize: 'var(--text-body-medium-font-size)',
   opacity: 0.7,
-  padding: 'calc(var(--base) * 0.25)',
+  padding: 'calc(var(--spacer-3) * 0.25)',
   textDecoration: 'underline',
 }
 
@@ -112,9 +112,9 @@ export function TwoFactorForm({
         <h1
           style={{
             color: 'var(--color-text)',
-            fontSize: 'var(--font-size-h3)',
+            fontSize: 'var(--text-heading-large-font-size)',
             fontWeight: 600,
-            margin: '0 0 calc(var(--base) * 0.5) 0',
+            margin: '0 0 calc(var(--spacer-3) * 0.5) 0',
             textAlign: 'center',
           }}
         >
@@ -125,23 +125,23 @@ export function TwoFactorForm({
           style={{
             color: 'var(--color-text)',
             opacity: 0.7,
-            fontSize: 'var(--font-size-small)',
+            fontSize: 'var(--text-body-medium-font-size)',
             textAlign: 'center',
-            marginBottom: 'calc(var(--base) * 1.5)',
+            marginBottom: 'calc(var(--spacer-3) * 1.5)',
           }}
         >
           {hint}
         </p>
 
         <form onSubmit={onSubmit}>
-          <div style={{ marginBottom: 'calc(var(--base) * 1.5)' }}>
+          <div style={{ marginBottom: 'calc(var(--spacer-3) * 1.5)' }}>
             <label
               htmlFor="totp-code"
               style={{
                 display: 'block',
                 color: 'var(--color-text)',
-                marginBottom: 'calc(var(--base) * 0.5)',
-                fontSize: 'var(--font-size-small)',
+                marginBottom: 'calc(var(--spacer-3) * 0.5)',
+                fontSize: 'var(--text-body-medium-font-size)',
                 fontWeight: 500,
               }}
             >
@@ -158,12 +158,12 @@ export function TwoFactorForm({
                 required
                 style={{
                   width: '100%',
-                  padding: 'calc(var(--base) * 0.75)',
+                  padding: 'calc(var(--spacer-3) * 0.75)',
                   background: 'var(--color-bg)',
                   border: '1px solid var(--color-border)',
-                  borderRadius: 'var(--style-radius-s)',
+                  borderRadius: 'var(--radius-small)',
                   color: 'var(--color-text)',
-                  fontSize: 'var(--font-size-base)',
+                  fontSize: 'var(--text-body-large-font-size)',
                   outline: 'none',
                   boxSizing: 'border-box',
                 }}
@@ -185,8 +185,8 @@ export function TwoFactorForm({
             style={{
               display: 'flex',
               flexDirection: 'column',
-              gap: 'calc(var(--base) * 0.25)',
-              marginTop: 'var(--base)',
+              gap: 'calc(var(--spacer-3) * 0.25)',
+              marginTop: 'var(--spacer-3)',
               textAlign: 'center',
             }}
           >
@@ -228,13 +228,13 @@ export function TwoFactorForm({
           onClick={onBack}
           style={{
             width: '100%',
-            marginTop: 'var(--base)',
-            padding: 'calc(var(--base) * 0.5)',
+            marginTop: 'var(--spacer-3)',
+            padding: 'calc(var(--spacer-3) * 0.5)',
             background: 'transparent',
             border: 'none',
             color: 'var(--color-text)',
             opacity: 0.7,
-            fontSize: 'var(--font-size-small)',
+            fontSize: 'var(--text-body-medium-font-size)',
             cursor: 'pointer',
           }}
         >

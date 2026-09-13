@@ -155,7 +155,7 @@ export function PasskeysManagementClient({
       {error && <Banner type="danger">{error}</Banner>}
       {success && <Banner type="success">{success}</Banner>}
 
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 'var(--base)' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 'var(--spacer-3)' }}>
         <p className="field-description" style={{ margin: 0 }}>
           Passkeys provide secure, passwordless sign-in using your device&apos;s biometrics or security keys.
         </p>
@@ -172,9 +172,9 @@ export function PasskeysManagementClient({
       </div>
 
       {showRegisterForm && (
-        <div style={{ marginBottom: 'var(--base)' }}>
-          <div style={{ marginBottom: 'var(--base)' }}>
-            <label className="field-label" style={{ marginBottom: 'calc(var(--base) * 0.5)', display: 'block' }}>
+        <div style={{ marginBottom: 'var(--spacer-3)' }}>
+          <div style={{ marginBottom: 'var(--spacer-3)' }}>
+            <label className="field-label" style={{ marginBottom: 'calc(var(--spacer-3) * 0.5)', display: 'block' }}>
               Name (optional)
             </label>
             <input
@@ -185,20 +185,20 @@ export function PasskeysManagementClient({
               placeholder="e.g., MacBook Pro, iPhone"
               style={{
                 width: '100%',
-                padding: 'var(--base)',
+                padding: 'var(--spacer-3)',
                 background: 'var(--color-bg)',
                 border: '1px solid var(--color-border)',
-                borderRadius: 'var(--style-radius-s)',
+                borderRadius: 'var(--radius-small)',
                 color: 'var(--color-text)',
-                fontSize: 'var(--base-body-size)',
+                fontSize: 'var(--text-body-large-font-size)',
                 boxSizing: 'border-box',
               }}
             />
-            <p className="field-description" style={{ marginTop: 'calc(var(--base) * 0.25)' }}>
+            <p className="field-description" style={{ marginTop: 'calc(var(--spacer-3) * 0.25)' }}>
               Your browser will prompt you to use your device&apos;s biometrics or security key.
             </p>
           </div>
-          <div style={{ display: 'flex', gap: 'calc(var(--base) * 0.5)' }}>
+          <div style={{ display: 'flex', gap: 'calc(var(--spacer-3) * 0.5)' }}>
             <Button
               buttonStyle="primary"
               size="medium"
@@ -226,7 +226,7 @@ export function PasskeysManagementClient({
         <div
           style={{
             border: '1px solid var(--color-border)',
-            borderRadius: 'var(--style-radius-s)',
+            borderRadius: 'var(--radius-small)',
             overflow: 'hidden',
           }}
         >
@@ -237,7 +237,7 @@ export function PasskeysManagementClient({
                 display: 'flex',
                 justifyContent: 'space-between',
                 alignItems: 'center',
-                padding: 'var(--base)',
+                padding: 'var(--spacer-3)',
                 borderBottom:
                   index < passkeys.length - 1
                     ? '1px solid var(--color-border)'
@@ -248,7 +248,7 @@ export function PasskeysManagementClient({
                 <div style={{ color: 'var(--color-text)', fontWeight: 500 }}>
                   {pk.name || 'Passkey'}
                 </div>
-                <p className="field-description" style={{ margin: 'calc(var(--base) * 0.25) 0 0 0' }}>
+                <p className="field-description" style={{ margin: 'calc(var(--spacer-3) * 0.25) 0 0 0' }}>
                   Created: {formatDate(pk.createdAt)}
                   {pk.lastUsedAt && ` | Last used: ${formatDate(pk.lastUsedAt)}`}
                 </p>

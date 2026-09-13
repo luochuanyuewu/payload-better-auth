@@ -233,17 +233,17 @@ export function TwoFactorManagementClient({
             className="field-type__wrap"
             style={{
               width: '100%',
-              padding: 'var(--base)',
+              padding: 'var(--spacer-3)',
               background: 'var(--color-bg)',
               border: '1px solid var(--color-border)',
-              borderRadius: 'var(--style-radius-s)',
+              borderRadius: 'var(--radius-small)',
               color: 'var(--color-text)',
-              fontSize: 'var(--base-body-size)',
-              marginBottom: 'var(--base)',
+              fontSize: 'var(--text-body-large-font-size)',
+              marginBottom: 'var(--spacer-3)',
               boxSizing: 'border-box',
             }}
           />
-          <div style={{ display: 'flex', gap: 'calc(var(--base) * 0.5)' }}>
+          <div style={{ display: 'flex', gap: 'calc(var(--spacer-3) * 0.5)' }}>
             <Button
               buttonStyle="primary"
               size="medium"
@@ -282,24 +282,24 @@ export function TwoFactorManagementClient({
             title="QR code for authenticator app"
             style={{
               border: '1px solid var(--color-border)',
-              borderRadius: 'var(--style-radius-s)',
-              marginBottom: 'var(--base)',
+              borderRadius: 'var(--radius-small)',
+              marginBottom: 'var(--spacer-3)',
             }}
           />
 
           {secret && (
-            <div style={{ marginBottom: 'calc(var(--base) * 1.5)' }}>
-              <p className="field-description" style={{ marginBottom: 'calc(var(--base) * 0.5)' }}>
+            <div style={{ marginBottom: 'calc(var(--spacer-3) * 1.5)' }}>
+              <p className="field-description" style={{ marginBottom: 'calc(var(--spacer-3) * 0.5)' }}>
                 Or enter manually:
               </p>
               <code
                 style={{
                   display: 'inline-block',
-                  padding: 'calc(var(--base) * 0.5)',
+                  padding: 'calc(var(--spacer-3) * 0.5)',
                   background: 'var(--color-bg-secondary)',
-                  borderRadius: 'var(--style-radius-s)',
+                  borderRadius: 'var(--radius-small)',
                   fontFamily: 'monospace',
-                  fontSize: 'var(--base-body-size)',
+                  fontSize: 'var(--text-body-large-font-size)',
                   color: 'var(--color-text)',
                 }}
               >
@@ -321,16 +321,16 @@ export function TwoFactorManagementClient({
               placeholder="000000"
               style={{
                 width: '200px',
-                padding: 'var(--base)',
+                padding: 'var(--spacer-3)',
                 background: 'var(--color-bg)',
                 border: '1px solid var(--color-border)',
-                borderRadius: 'var(--style-radius-s)',
+                borderRadius: 'var(--radius-small)',
                 color: 'var(--color-text)',
                 fontSize: '1.5rem',
                 fontFamily: 'monospace',
                 textAlign: 'center',
                 letterSpacing: '0.5em',
-                marginBottom: 'var(--base)',
+                marginBottom: 'var(--spacer-3)',
                 boxSizing: 'border-box',
               }}
             />
@@ -356,10 +356,10 @@ export function TwoFactorManagementClient({
           <div
             style={{
               background: 'var(--color-bg-secondary)',
-              padding: 'var(--base)',
-              borderRadius: 'var(--style-radius-s)',
-              marginTop: 'var(--base)',
-              marginBottom: 'var(--base)',
+              padding: 'var(--spacer-3)',
+              borderRadius: 'var(--radius-small)',
+              marginTop: 'var(--spacer-3)',
+              marginBottom: 'var(--spacer-3)',
               fontFamily: 'monospace',
             }}
           >
@@ -367,7 +367,7 @@ export function TwoFactorManagementClient({
               style={{
                 display: 'grid',
                 gridTemplateColumns: 'repeat(2, 1fr)',
-                gap: 'calc(var(--base) * 0.5)',
+                gap: 'calc(var(--spacer-3) * 0.5)',
               }}
             >
               {backupCodes.map((code, index) => (
@@ -375,7 +375,7 @@ export function TwoFactorManagementClient({
                   key={index}
                   style={{
                     color: 'var(--color-text)',
-                    padding: 'calc(var(--base) * 0.25)',
+                    padding: 'calc(var(--spacer-3) * 0.25)',
                   }}
                 >
                   {code}
@@ -384,7 +384,7 @@ export function TwoFactorManagementClient({
             </div>
           </div>
 
-          <div style={{ display: 'flex', gap: 'calc(var(--base) * 0.5)' }}>
+          <div style={{ display: 'flex', gap: 'calc(var(--spacer-3) * 0.5)' }}>
             <Button
               buttonStyle="secondary"
               size="medium"

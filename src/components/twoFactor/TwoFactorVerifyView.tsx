@@ -80,14 +80,14 @@ export function TwoFactorVerifyView({
         alignItems: 'center',
         justifyContent: 'center',
         background: 'var(--color-bg)',
-        padding: 'var(--base)',
+        padding: 'var(--spacer-3)',
       }}
     >
       <div
         style={{
           background: 'var(--color-bg-elevated)',
-          padding: 'calc(var(--base) * 2)',
-          borderRadius: 'var(--style-radius-m)',
+          padding: 'calc(var(--spacer-3) * 2)',
+          borderRadius: 'var(--radius-medium)',
           boxShadow: '0 2px 20px rgba(0, 0, 0, 0.1)',
           width: '100%',
           maxWidth: '400px',
@@ -97,7 +97,7 @@ export function TwoFactorVerifyView({
           <div
             style={{
               textAlign: 'center',
-              marginBottom: 'calc(var(--base) * 1.5)',
+              marginBottom: 'calc(var(--spacer-3) * 1.5)',
             }}
           >
             {logo}
@@ -107,9 +107,9 @@ export function TwoFactorVerifyView({
         <h1
           style={{
             color: 'var(--color-text)',
-            fontSize: 'var(--font-size-h3)',
+            fontSize: 'var(--text-heading-large-font-size)',
             fontWeight: 600,
-            margin: '0 0 calc(var(--base) * 0.5) 0',
+            margin: '0 0 calc(var(--spacer-3) * 0.5) 0',
             textAlign: 'center',
           }}
         >
@@ -120,9 +120,9 @@ export function TwoFactorVerifyView({
           style={{
             color: 'var(--color-text)',
             opacity: 0.7,
-            fontSize: 'var(--font-size-small)',
+            fontSize: 'var(--text-body-medium-font-size)',
             textAlign: 'center',
-            marginBottom: 'calc(var(--base) * 1.5)',
+            marginBottom: 'calc(var(--spacer-3) * 1.5)',
           }}
         >
           {useBackupCode
@@ -131,14 +131,14 @@ export function TwoFactorVerifyView({
         </p>
 
         <form onSubmit={handleSubmit}>
-          <div style={{ marginBottom: 'calc(var(--base) * 1.5)' }}>
+          <div style={{ marginBottom: 'calc(var(--spacer-3) * 1.5)' }}>
             <label
               htmlFor="code"
               style={{
                 display: 'block',
                 color: 'var(--color-text)',
-                marginBottom: 'calc(var(--base) * 0.5)',
-                fontSize: 'var(--font-size-small)',
+                marginBottom: 'calc(var(--spacer-3) * 0.5)',
+                fontSize: 'var(--text-body-medium-font-size)',
                 fontWeight: 500,
               }}
             >
@@ -162,12 +162,12 @@ export function TwoFactorVerifyView({
               placeholder={useBackupCode ? 'xxxxxxxx' : '000000'}
               style={{
                 width: '100%',
-                padding: 'calc(var(--base) * 0.75)',
+                padding: 'calc(var(--spacer-3) * 0.75)',
                 background: 'var(--color-bg)',
                 border: '1px solid var(--color-border)',
-                borderRadius: 'var(--style-radius-s)',
+                borderRadius: 'var(--radius-small)',
                 color: 'var(--color-text)',
-                fontSize: 'var(--font-size-h4)',
+                fontSize: 'var(--text-heading-medium-font-size)',
                 fontFamily: 'monospace',
                 textAlign: 'center',
                 letterSpacing: useBackupCode ? '0.2em' : '0.5em',
@@ -181,11 +181,11 @@ export function TwoFactorVerifyView({
             <div
               style={{
                 color: 'var(--color-text-danger)',
-                marginBottom: 'var(--base)',
-                fontSize: 'var(--font-size-small)',
-                padding: 'calc(var(--base) * 0.5)',
+                marginBottom: 'var(--spacer-3)',
+                fontSize: 'var(--text-body-medium-font-size)',
+                padding: 'calc(var(--spacer-3) * 0.5)',
                 background: 'var(--color-bg-danger-tertiary)',
-                borderRadius: 'var(--style-radius-s)',
+                borderRadius: 'var(--radius-small)',
                 border: '1px solid var(--color-border-danger)',
               }}
             >
@@ -198,17 +198,17 @@ export function TwoFactorVerifyView({
             disabled={loading || (!useBackupCode && code.length !== 6)}
             style={{
               width: '100%',
-              padding: 'calc(var(--base) * 0.75)',
+              padding: 'calc(var(--spacer-3) * 0.75)',
               background: 'var(--color-text)',
               border: 'none',
-              borderRadius: 'var(--style-radius-s)',
+              borderRadius: 'var(--radius-small)',
               color: 'var(--color-bg-elevated)',
-              fontSize: 'var(--font-size-base)',
+              fontSize: 'var(--text-body-large-font-size)',
               fontWeight: 500,
               cursor: loading || (!useBackupCode && code.length !== 6) ? 'not-allowed' : 'pointer',
               opacity: loading || (!useBackupCode && code.length !== 6) ? 0.7 : 1,
               transition: 'opacity 150ms ease',
-              marginBottom: 'var(--base)',
+              marginBottom: 'var(--spacer-3)',
             }}
           >
             {loading ? 'Verifying...' : 'Verify'}
@@ -227,7 +227,7 @@ export function TwoFactorVerifyView({
                 border: 'none',
                 color: 'var(--color-text)',
                 opacity: 0.7,
-                fontSize: 'var(--font-size-small)',
+                fontSize: 'var(--text-body-medium-font-size)',
                 textDecoration: 'underline',
                 cursor: 'pointer',
                 padding: 0,

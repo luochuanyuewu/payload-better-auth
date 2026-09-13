@@ -41,10 +41,10 @@ export function LoginForm({
         <h1
           style={{
             color: 'var(--color-text)',
-            fontSize: 'var(--font-size-h3)',
+            fontSize: 'var(--text-heading-large-font-size)',
             fontWeight: 600,
             textAlign: 'center',
-            margin: '0 0 calc(var(--base) * 1.5) 0',
+            margin: '0 0 calc(var(--spacer-3) * 1.5) 0',
           }}
         >
           {title}
@@ -62,7 +62,7 @@ export function LoginForm({
           {forgotPasswordAvailable && (
             <div
               style={{
-                marginBottom: 'calc(var(--base) * 1.5)',
+                marginBottom: 'calc(var(--spacer-3) * 1.5)',
                 textAlign: 'right',
               }}
             >
@@ -75,7 +75,7 @@ export function LoginForm({
                   color: 'var(--color-text)',
                   opacity: 0.7,
                   cursor: 'pointer',
-                  fontSize: 'var(--font-size-small)',
+                  fontSize: 'var(--text-body-medium-font-size)',
                   padding: 0,
                   textDecoration: 'underline',
                 }}
@@ -99,7 +99,7 @@ export function LoginForm({
             <OrDivider />
 
             {secondaryMethods.map((method) => (
-              <div key={method.key} style={{ marginBottom: 'calc(var(--base) * 0.5)' }}>
+              <div key={method.key} style={{ marginBottom: 'calc(var(--spacer-3) * 0.5)' }}>
                 <AuthButton
                   variant="secondary"
                   icon={method.icon}
@@ -116,9 +116,9 @@ export function LoginForm({
         {showEmptyState && (
           <p
             style={{
-              marginTop: 'var(--base)',
+              marginTop: 'var(--spacer-3)',
               textAlign: 'center',
-              fontSize: 'var(--font-size-small)',
+              fontSize: 'var(--text-body-medium-font-size)',
               color: 'var(--color-text)',
               opacity: 0.7,
             }}
@@ -130,9 +130,9 @@ export function LoginForm({
         {signUpAvailable && (
           <div
             style={{
-              marginTop: 'calc(var(--base) * 1.5)',
+              marginTop: 'calc(var(--spacer-3) * 1.5)',
               textAlign: 'center',
-              fontSize: 'var(--font-size-small)',
+              fontSize: 'var(--text-body-medium-font-size)',
               color: 'var(--color-text)',
               opacity: 0.8,
             }}

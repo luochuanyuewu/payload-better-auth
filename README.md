@@ -92,7 +92,13 @@ For AI-assisted exploration: [DeepWiki](https://deepwiki.com/delmaredigital/payl
 pnpm add @delmaredigital/payload-better-auth better-auth
 ```
 
-**Requirements:** `payload` >= 3.69.0 · `better-auth` >= 1.7.0 · `next` >= 15.5.16 · `react` >= 19.2.1 · Node >= 20.9
+**Requirements:** `payload` / `@payloadcms/ui` 4.0.0-canary.33 · `better-auth` >= 1.7.0 < 2 · `react` >= 19.2.1 < 20 · Node >= 24.15.0
+
+The bridge does not depend on Next.js or TanStack Start. Its endpoints use the
+Web Request/Response APIs, session helpers accept Headers, and admin views use
+Payload UI and its framework adapters. The host supplies the Payload framework
+adapter and RSC runtime. Framework-specific request helpers in examples belong
+to the host application.
 
 ## Quick Start
 

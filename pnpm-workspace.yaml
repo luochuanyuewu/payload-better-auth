@@ -2,3 +2,7 @@ onlyBuiltDependencies:
   - '@swc/core'
   - esbuild
   - sharp
+
+overrides:
+  # The bridge uses Better Auth's framework-independent entry.
+  'better-auth>next': '-'

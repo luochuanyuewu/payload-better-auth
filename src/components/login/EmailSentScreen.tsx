@@ -25,7 +25,7 @@ export function EmailSentScreen({
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          margin: '0 auto calc(var(--base) * 1.5)',
+          margin: '0 auto calc(var(--spacer-3) * 1.5)',
           fontSize: '28px',
         }}
       >
@@ -35,9 +35,9 @@ export function EmailSentScreen({
       <h1
         style={{
           color: 'var(--color-text)',
-          fontSize: 'var(--font-size-h3)',
+          fontSize: 'var(--text-heading-large-font-size)',
           fontWeight: 600,
-          margin: '0 0 calc(var(--base) * 0.5) 0',
+          margin: '0 0 calc(var(--spacer-3) * 0.5) 0',
         }}
       >
         Check Your Email
@@ -47,8 +47,8 @@ export function EmailSentScreen({
         style={{
           color: 'var(--color-text)',
           opacity: 0.7,
-          fontSize: 'var(--font-size-small)',
-          marginBottom: 'calc(var(--base) * 1.5)',
+          fontSize: 'var(--text-body-medium-font-size)',
+          marginBottom: 'calc(var(--spacer-3) * 1.5)',
         }}
       >
         {message}
@@ -59,8 +59,8 @@ export function EmailSentScreen({
           style={{
             color: 'var(--color-text)',
             opacity: 0.6,
-            fontSize: 'var(--font-size-small)',
-            marginBottom: 'calc(var(--base) * 1.5)',
+            fontSize: 'var(--text-body-medium-font-size)',
+            marginBottom: 'calc(var(--spacer-3) * 1.5)',
           }}
         >
           {note}
@@ -71,12 +71,12 @@ export function EmailSentScreen({
         type="button"
         onClick={onBack}
         style={{
-          padding: 'calc(var(--base) * 0.75) calc(var(--base) * 1.5)',
+          padding: 'calc(var(--spacer-3) * 0.75) calc(var(--spacer-3) * 1.5)',
           background: 'var(--color-border)',
           border: 'none',
-          borderRadius: 'var(--style-radius-s)',
+          borderRadius: 'var(--radius-small)',
           color: 'var(--color-text)',
-          fontSize: 'var(--font-size-base)',
+          fontSize: 'var(--text-body-large-font-size)',
           cursor: 'pointer',
         }}
       >

@@ -41,9 +41,9 @@ export function RegisterForm({
         <h1
           style={{
             color: 'var(--color-text)',
-            fontSize: 'var(--font-size-h3)',
+            fontSize: 'var(--text-heading-large-font-size)',
             fontWeight: 600,
-            margin: '0 0 calc(var(--base) * 1.5) 0',
+            margin: '0 0 calc(var(--spacer-3) * 1.5) 0',
             textAlign: 'center',
           }}
         >
@@ -54,7 +54,7 @@ export function RegisterForm({
           <AuthField id="name" label="Name" type="text" value={name} onChange={onNameChange} autoComplete="name" autoFocus />
           <AuthField id="register-email" label="Email" type="email" value={email} onChange={onEmailChange} autoComplete="email" />
           <AuthField id="register-password" label="Password" type="password" value={password} onChange={onPasswordChange} autoComplete="new-password" />
-          <AuthField id="confirm-password" label="Confirm Password" type="password" value={confirmPassword} onChange={onConfirmPasswordChange} autoComplete="new-password" marginBottom="calc(var(--base) * 1.5)" />
+          <AuthField id="confirm-password" label="Confirm Password" type="password" value={confirmPassword} onChange={onConfirmPasswordChange} autoComplete="new-password" marginBottom="calc(var(--spacer-3) * 1.5)" />
 
           {error && <AuthBanner kind="error">{error}</AuthBanner>}
 
@@ -65,9 +65,9 @@ export function RegisterForm({
 
         <div
           style={{
-            marginTop: 'calc(var(--base) * 1.5)',
+            marginTop: 'calc(var(--spacer-3) * 1.5)',
             textAlign: 'center',
-            fontSize: 'var(--font-size-small)',
+            fontSize: 'var(--text-body-medium-font-size)',
             color: 'var(--color-text)',
             opacity: 0.8,
           }}

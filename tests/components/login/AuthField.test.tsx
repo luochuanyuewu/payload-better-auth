@@ -68,11 +68,11 @@ describe('AuthField', () => {
     expect((capturedRef as HTMLInputElement | null)?.id).toBe('ref-field')
   })
 
-  it('uses var(--base) as the default wrapper marginBottom', () => {
+  it('uses var(--spacer-3) as the default wrapper marginBottom', () => {
     const { container } = render(
       <AuthField id="x" label="X" type="text" value="" onChange={() => {}} />
     )
-    expect((container.firstChild as HTMLElement).style.marginBottom).toBe('var(--base)')
+    expect((container.firstChild as HTMLElement).style.marginBottom).toBe('var(--spacer-3)')
   })
 
   it('honors a custom marginBottom prop on the wrapper div', () => {
@@ -83,10 +83,10 @@ describe('AuthField', () => {
         type="text"
         value=""
         onChange={() => {}}
-        marginBottom="calc(var(--base) * 1.5)"
+        marginBottom="calc(var(--spacer-3) * 1.5)"
       />
     )
-    expect((container.firstChild as HTMLElement).style.marginBottom).toBe('calc(var(--base) * 1.5)')
+    expect((container.firstChild as HTMLElement).style.marginBottom).toBe('calc(var(--spacer-3) * 1.5)')
   })
 
   it('focuses the input when autoFocus is true', () => {
